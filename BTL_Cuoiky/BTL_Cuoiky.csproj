@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{008EEA19-4288-4D14-81BE-3BE08CD94EF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTL_Cuoiky</RootNamespace>
+    <AssemblyName>BTL_Cuoiky</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BTL_Coffee\Ban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Ban.Designer.cs">
+      <DependentUpon>Ban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Baocaotonkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Baocaotonkho.Designer.cs">
+      <DependentUpon>Baocaotonkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\BCBanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\BCBanhang.Designer.cs">
+      <DependentUpon>BCBanhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\BCDoanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\BCDoanhthu.Designer.cs">
+      <DependentUpon>BCDoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\frmKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\frmKhachhang.Designer.cs">
+      <DependentUpon>frmKhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Hoadonbanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Hoadonbanhang.Designer.cs">
+      <DependentUpon>Hoadonbanhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Khuyenmai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Khuyenmai.Designer.cs">
+      <DependentUpon>Khuyenmai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Nhacungcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Nhacungcap.Designer.cs">
+      <DependentUpon>Nhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Nhanvien.Designer.cs">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Phanquyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Phanquyen.Designer.cs">
+      <DependentUpon>Phanquyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Phieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Phieunhap.Designer.cs">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Phieuxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Phieuxuat.Designer.cs">
+      <DependentUpon>Phieuxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Quanlykho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Quanlykho.Designer.cs">
+      <DependentUpon>Quanlykho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTL_Coffee\Sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\Sanpham.Designer.cs">
+      <DependentUpon>Sanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Function.cs" />
+    <Compile Include="BTL_Coffee\frmDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTL_Coffee\frmDangnhap.Designer.cs">
+      <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BTL_Coffee\Ban.resx">
+      <DependentUpon>Ban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Baocaotonkho.resx">
+      <DependentUpon>Baocaotonkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\BCBanhang.resx">
+      <DependentUpon>BCBanhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\BCDoanhthu.resx">
+      <DependentUpon>BCDoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\frmDangnhap.resx">
+      <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\frmKhachhang.resx">
+      <DependentUpon>frmKhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Hoadonbanhang.resx">
+      <DependentUpon>Hoadonbanhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Khuyenmai.resx">
+      <DependentUpon>Khuyenmai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Nhacungcap.resx">
+      <DependentUpon>Nhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Nhanvien.resx">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Phanquyen.resx">
+      <DependentUpon>Phanquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Phieunhap.resx">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Phieuxuat.resx">
+      <DependentUpon>Phieuxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Quanlykho.resx">
+      <DependentUpon>Quanlykho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTL_Coffee\Sanpham.resx">
+      <DependentUpon>Sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown White Modern Elegant Round Coffee Shop Logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown and Beige Rustic Organic Coffee Products Coffee Logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Coffe_NVBH\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
