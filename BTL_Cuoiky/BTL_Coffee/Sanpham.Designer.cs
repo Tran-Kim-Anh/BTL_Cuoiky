@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sanpham));
             this.dgridSanpham = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lblquanlysp = new System.Windows.Forms.Label();
@@ -66,12 +66,10 @@
             this.mnuSanpham = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuquanlykho = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPhieunhap = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPhieuxuat = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNCC = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocao = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaobanhang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaodoanhthu = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBctonkho = new System.Windows.Forms.ToolStripMenuItem();
             this.btnHienthi = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTimkiem = new Guna.UI2.WinForms.Guna2Button();
@@ -94,26 +92,26 @@
             // 
             // dgridSanpham
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgridSanpham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgridSanpham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgridSanpham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgridSanpham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgridSanpham.ColumnHeadersHeight = 4;
             this.dgridSanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgridSanpham.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgridSanpham.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgridSanpham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgridSanpham.Location = new System.Drawing.Point(90, 457);
             this.dgridSanpham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -509,7 +507,6 @@
             this.mnuquanlykho.BackColor = System.Drawing.Color.SaddleBrown;
             this.mnuquanlykho.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuPhieunhap,
-            this.mnuPhieuxuat,
             this.mnuNCC});
             this.mnuquanlykho.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuquanlykho.ForeColor = System.Drawing.Color.White;
@@ -526,14 +523,6 @@
             this.mnuPhieunhap.Text = "Phiếu nhập";
             this.mnuPhieunhap.Click += new System.EventHandler(this.mnuPhieunhap_Click);
             // 
-            // mnuPhieuxuat
-            // 
-            this.mnuPhieuxuat.BackColor = System.Drawing.SystemColors.Control;
-            this.mnuPhieuxuat.Name = "mnuPhieuxuat";
-            this.mnuPhieuxuat.Size = new System.Drawing.Size(227, 30);
-            this.mnuPhieuxuat.Text = "Phiếu xuất";
-            this.mnuPhieuxuat.Click += new System.EventHandler(this.mnuPhieuxuat_Click);
-            // 
             // mnuNCC
             // 
             this.mnuNCC.Name = "mnuNCC";
@@ -546,8 +535,7 @@
             this.mnuBaocao.BackColor = System.Drawing.Color.SaddleBrown;
             this.mnuBaocao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuBaocaobanhang,
-            this.mnuBaocaodoanhthu,
-            this.mnuBctonkho});
+            this.mnuBaocaodoanhthu});
             this.mnuBaocao.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuBaocao.ForeColor = System.Drawing.Color.White;
             this.mnuBaocao.ImageTransparentColor = System.Drawing.Color.White;
@@ -568,13 +556,6 @@
             this.mnuBaocaodoanhthu.Size = new System.Drawing.Size(274, 30);
             this.mnuBaocaodoanhthu.Text = "Báo cáo doanh thu";
             this.mnuBaocaodoanhthu.Click += new System.EventHandler(this.mnuBaocaodoanhthu_Click);
-            // 
-            // mnuBctonkho
-            // 
-            this.mnuBctonkho.Name = "mnuBctonkho";
-            this.mnuBctonkho.Size = new System.Drawing.Size(274, 30);
-            this.mnuBctonkho.Text = "Báo cáo tồn kho ";
-            this.mnuBctonkho.Click += new System.EventHandler(this.mnuBctonkho_Click);
             // 
             // btnHienthi
             // 
@@ -852,12 +833,10 @@
         private System.Windows.Forms.ToolStripMenuItem mnuSanpham;
         private System.Windows.Forms.ToolStripMenuItem mnuquanlykho;
         private System.Windows.Forms.ToolStripMenuItem mnuPhieunhap;
-        private System.Windows.Forms.ToolStripMenuItem mnuPhieuxuat;
         private System.Windows.Forms.ToolStripMenuItem mnuNCC;
         private System.Windows.Forms.ToolStripMenuItem mnuBaocao;
         private System.Windows.Forms.ToolStripMenuItem mnuBaocaobanhang;
         private System.Windows.Forms.ToolStripMenuItem mnuBaocaodoanhthu;
-        private System.Windows.Forms.ToolStripMenuItem mnuBctonkho;
         private Guna.UI2.WinForms.Guna2Button btnHienthi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTenloai;

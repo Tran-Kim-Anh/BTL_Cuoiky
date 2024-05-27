@@ -47,6 +47,9 @@
             this.mskNgayxuat = new System.Windows.Forms.MaskedTextBox();
             this.guna2cboLydo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.grbPhieuxuat = new System.Windows.Forms.GroupBox();
+            this.txtTennhanvien = new System.Windows.Forms.TextBox();
+            this.lblTennhanvien = new System.Windows.Forms.Label();
+            this.cboManhanvien = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2updSoluong = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.txtThanhtien = new System.Windows.Forms.TextBox();
             this.txtDongiaxuat = new System.Windows.Forms.TextBox();
@@ -75,12 +78,10 @@
             this.mnuSanpham = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuquanlykho = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPhieunhap = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPhieuxuat = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNCC = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocao = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaobanhang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaodoanhthu = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBctonkho = new System.Windows.Forms.ToolStripMenuItem();
             this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.btnBoqua = new Guna.UI2.WinForms.Guna2Button();
@@ -88,9 +89,6 @@
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.btnInphieu = new Guna.UI2.WinForms.Guna2Button();
-            this.cboManhanvien = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblTennhanvien = new System.Windows.Forms.Label();
-            this.txtTennhanvien = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.grbPhieuxuat.SuspendLayout();
@@ -348,6 +346,41 @@
             this.grbPhieuxuat.TabIndex = 77;
             this.grbPhieuxuat.TabStop = false;
             this.grbPhieuxuat.Text = "Thông tin chung";
+            // 
+            // txtTennhanvien
+            // 
+            this.txtTennhanvien.Location = new System.Drawing.Point(690, 103);
+            this.txtTennhanvien.Multiline = true;
+            this.txtTennhanvien.Name = "txtTennhanvien";
+            this.txtTennhanvien.Size = new System.Drawing.Size(190, 37);
+            this.txtTennhanvien.TabIndex = 79;
+            // 
+            // lblTennhanvien
+            // 
+            this.lblTennhanvien.AutoSize = true;
+            this.lblTennhanvien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTennhanvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblTennhanvien.Location = new System.Drawing.Point(542, 117);
+            this.lblTennhanvien.Name = "lblTennhanvien";
+            this.lblTennhanvien.Size = new System.Drawing.Size(133, 23);
+            this.lblTennhanvien.TabIndex = 78;
+            this.lblTennhanvien.Text = "Tên nhân viên:";
+            // 
+            // cboManhanvien
+            // 
+            this.cboManhanvien.BackColor = System.Drawing.Color.Transparent;
+            this.cboManhanvien.BorderColor = System.Drawing.Color.Black;
+            this.cboManhanvien.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboManhanvien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboManhanvien.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboManhanvien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboManhanvien.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboManhanvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboManhanvien.ItemHeight = 30;
+            this.cboManhanvien.Location = new System.Drawing.Point(690, 47);
+            this.cboManhanvien.Name = "cboManhanvien";
+            this.cboManhanvien.Size = new System.Drawing.Size(190, 36);
+            this.cboManhanvien.TabIndex = 77;
             // 
             // guna2updSoluong
             // 
@@ -637,7 +670,6 @@
             this.mnuquanlykho.BackColor = System.Drawing.Color.OldLace;
             this.mnuquanlykho.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuPhieunhap,
-            this.mnuPhieuxuat,
             this.mnuNCC});
             this.mnuquanlykho.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuquanlykho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -654,14 +686,6 @@
             this.mnuPhieunhap.Text = "Phiếu nhập";
             this.mnuPhieunhap.Click += new System.EventHandler(this.mnuPhieunhap_Click);
             // 
-            // mnuPhieuxuat
-            // 
-            this.mnuPhieuxuat.BackColor = System.Drawing.Color.SaddleBrown;
-            this.mnuPhieuxuat.ForeColor = System.Drawing.Color.White;
-            this.mnuPhieuxuat.Name = "mnuPhieuxuat";
-            this.mnuPhieuxuat.Size = new System.Drawing.Size(227, 30);
-            this.mnuPhieuxuat.Text = "Phiếu xuất";
-            // 
             // mnuNCC
             // 
             this.mnuNCC.Name = "mnuNCC";
@@ -674,8 +698,7 @@
             this.mnuBaocao.BackColor = System.Drawing.Color.SaddleBrown;
             this.mnuBaocao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuBaocaobanhang,
-            this.mnuBaocaodoanhthu,
-            this.mnuBctonkho});
+            this.mnuBaocaodoanhthu});
             this.mnuBaocao.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuBaocao.ForeColor = System.Drawing.Color.White;
             this.mnuBaocao.ImageTransparentColor = System.Drawing.Color.White;
@@ -696,13 +719,6 @@
             this.mnuBaocaodoanhthu.Size = new System.Drawing.Size(274, 30);
             this.mnuBaocaodoanhthu.Text = "Báo cáo doanh thu";
             this.mnuBaocaodoanhthu.Click += new System.EventHandler(this.mnuBaocaodoanhthu_Click);
-            // 
-            // mnuBctonkho
-            // 
-            this.mnuBctonkho.Name = "mnuBctonkho";
-            this.mnuBctonkho.Size = new System.Drawing.Size(274, 30);
-            this.mnuBctonkho.Text = "Báo cáo tồn kho ";
-            this.mnuBctonkho.Click += new System.EventHandler(this.mnuBctonkho_Click);
             // 
             // btnThoat
             // 
@@ -838,41 +854,6 @@
             this.btnInphieu.TabIndex = 121;
             this.btnInphieu.Text = "In phiếu";
             // 
-            // cboManhanvien
-            // 
-            this.cboManhanvien.BackColor = System.Drawing.Color.Transparent;
-            this.cboManhanvien.BorderColor = System.Drawing.Color.Black;
-            this.cboManhanvien.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboManhanvien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboManhanvien.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboManhanvien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboManhanvien.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboManhanvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboManhanvien.ItemHeight = 30;
-            this.cboManhanvien.Location = new System.Drawing.Point(690, 47);
-            this.cboManhanvien.Name = "cboManhanvien";
-            this.cboManhanvien.Size = new System.Drawing.Size(190, 36);
-            this.cboManhanvien.TabIndex = 77;
-            // 
-            // lblTennhanvien
-            // 
-            this.lblTennhanvien.AutoSize = true;
-            this.lblTennhanvien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTennhanvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTennhanvien.Location = new System.Drawing.Point(542, 117);
-            this.lblTennhanvien.Name = "lblTennhanvien";
-            this.lblTennhanvien.Size = new System.Drawing.Size(133, 23);
-            this.lblTennhanvien.TabIndex = 78;
-            this.lblTennhanvien.Text = "Tên nhân viên:";
-            // 
-            // txtTennhanvien
-            // 
-            this.txtTennhanvien.Location = new System.Drawing.Point(690, 103);
-            this.txtTennhanvien.Multiline = true;
-            this.txtTennhanvien.Name = "txtTennhanvien";
-            this.txtTennhanvien.Size = new System.Drawing.Size(190, 37);
-            this.txtTennhanvien.TabIndex = 79;
-            // 
             // Phieuxuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -953,11 +934,9 @@
         private System.Windows.Forms.ToolStripMenuItem mnuSanpham;
         private System.Windows.Forms.ToolStripMenuItem mnuquanlykho;
         private System.Windows.Forms.ToolStripMenuItem mnuPhieunhap;
-        private System.Windows.Forms.ToolStripMenuItem mnuPhieuxuat;
         private System.Windows.Forms.ToolStripMenuItem mnuBaocao;
         private System.Windows.Forms.ToolStripMenuItem mnuBaocaobanhang;
         private System.Windows.Forms.ToolStripMenuItem mnuBaocaodoanhthu;
-        private System.Windows.Forms.ToolStripMenuItem mnuBctonkho;
         private Guna.UI2.WinForms.Guna2Button btnThoat;
         private Guna.UI2.WinForms.Guna2Button btnLuu;
         private Guna.UI2.WinForms.Guna2Button btnBoqua;

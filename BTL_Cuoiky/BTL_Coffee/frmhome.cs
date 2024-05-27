@@ -117,5 +117,10 @@ namespace BTL_Cuoiky.BTL_Coffee
             frmDangnhap dn = new frmDangnhap();
             dn.ShowDialog();
         }
+
+        private void frmhome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
