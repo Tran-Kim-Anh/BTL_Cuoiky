@@ -138,6 +138,7 @@ namespace BTL_Cuoiky.BTL_Coffee
         }
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
+            //Tìm kiếm
             string sql;
             int ngay, thang, nam;
             if ((txtMaphieunhap.Text == "") &&(txtTongtien.Text=="") && (txtNhanvien.Text=="")&&(txtNgay.Text== "")&&(txtThang.Text=="")&&(txtNam.Text=="")&&(txtNhacungcap.Text==""))
