@@ -57,6 +57,10 @@
             this.txttendangnhap = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rdoNVK = new System.Windows.Forms.RadioButton();
+            this.rdoNVBH = new System.Windows.Forms.RadioButton();
+            this.rdoAdmin = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnThoat
@@ -127,7 +131,7 @@
             this.cboCalam.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboCalam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboCalam.ItemHeight = 30;
-            this.cboCalam.Location = new System.Drawing.Point(734, 363);
+            this.cboCalam.Location = new System.Drawing.Point(734, 306);
             this.cboCalam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCalam.Name = "cboCalam";
             this.cboCalam.Size = new System.Drawing.Size(312, 36);
@@ -138,7 +142,7 @@
             this.rdoNu.AutoSize = true;
             this.rdoNu.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoNu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rdoNu.Location = new System.Drawing.Point(734, 300);
+            this.rdoNu.Location = new System.Drawing.Point(896, 242);
             this.rdoNu.Name = "rdoNu";
             this.rdoNu.Size = new System.Drawing.Size(61, 29);
             this.rdoNu.TabIndex = 145;
@@ -150,7 +154,7 @@
             // 
             this.rdoNam.AutoSize = true;
             this.rdoNam.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNam.Location = new System.Drawing.Point(734, 232);
+            this.rdoNam.Location = new System.Drawing.Point(734, 242);
             this.rdoNam.Name = "rdoNam";
             this.rdoNam.Size = new System.Drawing.Size(75, 29);
             this.rdoNam.TabIndex = 144;
@@ -179,7 +183,7 @@
             this.lblmachucvu.BackColor = System.Drawing.Color.Transparent;
             this.lblmachucvu.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmachucvu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblmachucvu.Location = new System.Drawing.Point(586, 102);
+            this.lblmachucvu.Location = new System.Drawing.Point(585, 102);
             this.lblmachucvu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblmachucvu.Name = "lblmachucvu";
             this.lblmachucvu.Size = new System.Drawing.Size(122, 27);
@@ -190,7 +194,7 @@
             // 
             this.mskNgayvaolam.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskNgayvaolam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.mskNgayvaolam.Location = new System.Drawing.Point(191, 367);
+            this.mskNgayvaolam.Location = new System.Drawing.Point(191, 384);
             this.mskNgayvaolam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskNgayvaolam.Mask = "00/00/0000";
             this.mskNgayvaolam.Name = "mskNgayvaolam";
@@ -203,7 +207,7 @@
             this.lblngayvaolam.BackColor = System.Drawing.Color.Transparent;
             this.lblngayvaolam.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblngayvaolam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblngayvaolam.Location = new System.Drawing.Point(32, 367);
+            this.lblngayvaolam.Location = new System.Drawing.Point(31, 384);
             this.lblngayvaolam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblngayvaolam.Name = "lblngayvaolam";
             this.lblngayvaolam.Size = new System.Drawing.Size(139, 27);
@@ -215,7 +219,7 @@
             this.lblcalam.BackColor = System.Drawing.Color.Transparent;
             this.lblcalam.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcalam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblcalam.Location = new System.Drawing.Point(589, 372);
+            this.lblcalam.Location = new System.Drawing.Point(585, 315);
             this.lblcalam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblcalam.Name = "lblcalam";
             this.lblcalam.Size = new System.Drawing.Size(78, 27);
@@ -226,7 +230,7 @@
             // 
             this.masktxtsodienthoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.masktxtsodienthoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.masktxtsodienthoai.Location = new System.Drawing.Point(191, 229);
+            this.masktxtsodienthoai.Location = new System.Drawing.Point(191, 239);
             this.masktxtsodienthoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.masktxtsodienthoai.Mask = "(999) 000-0000";
             this.masktxtsodienthoai.Name = "masktxtsodienthoai";
@@ -238,7 +242,7 @@
             this.lblsodienthoai.BackColor = System.Drawing.Color.Transparent;
             this.lblsodienthoai.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsodienthoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblsodienthoai.Location = new System.Drawing.Point(31, 232);
+            this.lblsodienthoai.Location = new System.Drawing.Point(31, 244);
             this.lblsodienthoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblsodienthoai.Name = "lblsodienthoai";
             this.lblsodienthoai.Size = new System.Drawing.Size(132, 27);
@@ -248,7 +252,7 @@
             // mskNgaysinh
             // 
             this.mskNgaysinh.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskNgaysinh.Location = new System.Drawing.Point(191, 294);
+            this.mskNgaysinh.Location = new System.Drawing.Point(191, 309);
             this.mskNgaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskNgaysinh.Mask = "00/00/0000";
             this.mskNgaysinh.Name = "mskNgaysinh";
@@ -261,7 +265,7 @@
             this.lblgioitinh.BackColor = System.Drawing.Color.Transparent;
             this.lblgioitinh.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgioitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblgioitinh.Location = new System.Drawing.Point(589, 234);
+            this.lblgioitinh.Location = new System.Drawing.Point(585, 244);
             this.lblgioitinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblgioitinh.Name = "lblgioitinh";
             this.lblgioitinh.Size = new System.Drawing.Size(94, 27);
@@ -282,7 +286,7 @@
             this.lblngaysinh.BackColor = System.Drawing.Color.Transparent;
             this.lblngaysinh.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblngaysinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblngaysinh.Location = new System.Drawing.Point(31, 300);
+            this.lblngaysinh.Location = new System.Drawing.Point(32, 315);
             this.lblngaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblngaysinh.Name = "lblngaysinh";
             this.lblngaysinh.Size = new System.Drawing.Size(103, 27);
@@ -305,7 +309,7 @@
             this.lbldiachi.BackColor = System.Drawing.Color.Transparent;
             this.lbldiachi.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbldiachi.Location = new System.Drawing.Point(586, 167);
+            this.lbldiachi.Location = new System.Drawing.Point(585, 167);
             this.lbldiachi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbldiachi.Name = "lbldiachi";
             this.lbldiachi.Size = new System.Drawing.Size(77, 27);
@@ -371,7 +375,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(589, 465);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(585, 465);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(101, 27);
@@ -401,7 +405,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(696, 465);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(692, 465);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(28, 27);
@@ -420,12 +424,67 @@
             this.guna2HtmlLabel4.TabIndex = 161;
             this.guna2HtmlLabel4.Text = "(*)";
             // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(585, 384);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(71, 27);
+            this.guna2HtmlLabel5.TabIndex = 162;
+            this.guna2HtmlLabel5.Text = "Quyền:";
+            // 
+            // rdoNVK
+            // 
+            this.rdoNVK.AutoSize = true;
+            this.rdoNVK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoNVK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rdoNVK.Location = new System.Drawing.Point(973, 389);
+            this.rdoNVK.Name = "rdoNVK";
+            this.rdoNVK.Size = new System.Drawing.Size(73, 27);
+            this.rdoNVK.TabIndex = 165;
+            this.rdoNVK.TabStop = true;
+            this.rdoNVK.Text = "NVK";
+            this.rdoNVK.UseVisualStyleBackColor = true;
+            // 
+            // rdoNVBH
+            // 
+            this.rdoNVBH.AutoSize = true;
+            this.rdoNVBH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoNVBH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rdoNVBH.Location = new System.Drawing.Point(860, 389);
+            this.rdoNVBH.Name = "rdoNVBH";
+            this.rdoNVBH.Size = new System.Drawing.Size(87, 27);
+            this.rdoNVBH.TabIndex = 164;
+            this.rdoNVBH.TabStop = true;
+            this.rdoNVBH.Text = "NVBH";
+            this.rdoNVBH.UseVisualStyleBackColor = true;
+            // 
+            // rdoAdmin
+            // 
+            this.rdoAdmin.AutoSize = true;
+            this.rdoAdmin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rdoAdmin.Location = new System.Drawing.Point(734, 389);
+            this.rdoAdmin.Name = "rdoAdmin";
+            this.rdoAdmin.Size = new System.Drawing.Size(85, 27);
+            this.rdoAdmin.TabIndex = 163;
+            this.rdoAdmin.TabStop = true;
+            this.rdoAdmin.Text = "Admin";
+            this.rdoAdmin.UseVisualStyleBackColor = true;
+            // 
             // Phanquyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1082, 601);
+            this.Controls.Add(this.rdoNVK);
+            this.Controls.Add(this.rdoNVBH);
+            this.Controls.Add(this.rdoAdmin);
+            this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.txttendangnhap);
@@ -493,5 +552,9 @@
         private System.Windows.Forms.TextBox txttendangnhap;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private System.Windows.Forms.RadioButton rdoNVK;
+        private System.Windows.Forms.RadioButton rdoNVBH;
+        private System.Windows.Forms.RadioButton rdoAdmin;
     }
 }
