@@ -16,7 +16,7 @@ namespace BTL_Cuoiky.Class
         public static string connString;
         public static void Connect()
         {
-            connString = "Data Source=NHUNG\\SQLEXPRESS;Initial Catalog=BTL(DL);Integrated Security=True;Encrypt=False";
+            connString = "Data Source=LAPTOP-1FS3T6OE;Initial Catalog=BTLDL(1);Integrated Security=True;Encrypt=False";
             conn = new SqlConnection();
             conn.ConnectionString = connString;
             conn.Open();
