@@ -51,12 +51,12 @@
             this.mnuBaocaobanhang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaodoanhthu = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBctonkho = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.mnuNVBH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -289,15 +289,15 @@
             this.mnuBctonkho.Text = "Báo cáo tồn kho ";
             this.mnuBctonkho.Click += new System.EventHandler(this.mnuBctonkho_Click);
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(537, 127);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(382, 345);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 94;
-            this.pictureBox1.TabStop = false;
+            this.picLogo.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
+            this.picLogo.Location = new System.Drawing.Point(537, 127);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(382, 345);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 94;
+            this.picLogo.TabStop = false;
             // 
             // frmhome
             // 
@@ -307,23 +307,24 @@
             this.ClientSize = new System.Drawing.Size(1482, 778);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLogo);
             this.Name = "frmhome";
             this.Text = "Home";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmhome_FormClosed);
             this.guna2GradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.mnuNVBH.ResumeLayout(false);
             this.mnuNVBH.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2Button btnTaikhoan;

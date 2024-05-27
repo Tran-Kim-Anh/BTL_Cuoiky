@@ -30,15 +30,15 @@
         {
             this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangnhap = new Guna.UI2.WinForms.Guna2Button();
-            this.rdoNVKho = new System.Windows.Forms.RadioButton();
-            this.rdoAdmin = new System.Windows.Forms.RadioButton();
-            this.rdoNVBH = new System.Windows.Forms.RadioButton();
             this.txtDangnhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMatkhau = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblMatkhau = new System.Windows.Forms.Label();
             this.lblTendangnhap = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.rdoAdmin = new System.Windows.Forms.RadioButton();
+            this.rdoNVBH = new System.Windows.Forms.RadioButton();
+            this.rdoNVK = new System.Windows.Forms.RadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThoat
@@ -65,6 +65,7 @@
             this.btnThoat.TabIndex = 20;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseTransparentBackground = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDangnhap
             // 
@@ -92,42 +93,6 @@
             this.btnDangnhap.UseTransparentBackground = true;
             this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
             // 
-            // rdoNVKho
-            // 
-            this.rdoNVKho.AutoSize = true;
-            this.rdoNVKho.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNVKho.Location = new System.Drawing.Point(549, 345);
-            this.rdoNVKho.Name = "rdoNVKho";
-            this.rdoNVKho.Size = new System.Drawing.Size(91, 24);
-            this.rdoNVKho.TabIndex = 18;
-            this.rdoNVKho.TabStop = true;
-            this.rdoNVKho.Text = "NV Kho";
-            this.rdoNVKho.UseVisualStyleBackColor = true;
-            // 
-            // rdoAdmin
-            // 
-            this.rdoAdmin.AutoSize = true;
-            this.rdoAdmin.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoAdmin.Location = new System.Drawing.Point(375, 345);
-            this.rdoAdmin.Name = "rdoAdmin";
-            this.rdoAdmin.Size = new System.Drawing.Size(78, 24);
-            this.rdoAdmin.TabIndex = 17;
-            this.rdoAdmin.TabStop = true;
-            this.rdoAdmin.Text = "Admin";
-            this.rdoAdmin.UseVisualStyleBackColor = true;
-            // 
-            // rdoNVBH
-            // 
-            this.rdoNVBH.AutoSize = true;
-            this.rdoNVBH.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNVBH.Location = new System.Drawing.Point(195, 345);
-            this.rdoNVBH.Name = "rdoNVBH";
-            this.rdoNVBH.Size = new System.Drawing.Size(80, 24);
-            this.rdoNVBH.TabIndex = 16;
-            this.rdoNVBH.TabStop = true;
-            this.rdoNVBH.Text = "NVBH";
-            this.rdoNVBH.UseVisualStyleBackColor = true;
-            // 
             // txtDangnhap
             // 
             this.txtDangnhap.BorderColor = System.Drawing.Color.White;
@@ -149,7 +114,7 @@
             this.txtDangnhap.PlaceholderText = "";
             this.txtDangnhap.SelectedText = "";
             this.txtDangnhap.Size = new System.Drawing.Size(445, 48);
-            this.txtDangnhap.TabIndex = 14;
+            this.txtDangnhap.TabIndex = 1;
             // 
             // txtMatkhau
             // 
@@ -173,16 +138,16 @@
             this.txtMatkhau.Size = new System.Drawing.Size(445, 48);
             this.txtMatkhau.TabIndex = 15;
             // 
-            // guna2PictureBox1
+            // picLogo
             // 
-            this.guna2PictureBox1.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(337, -1);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(174, 157);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 13;
-            this.guna2PictureBox1.TabStop = false;
+            this.picLogo.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
+            this.picLogo.ImageRotate = 0F;
+            this.picLogo.Location = new System.Drawing.Point(337, -1);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(174, 157);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 13;
+            this.picLogo.TabStop = false;
             // 
             // lblMatkhau
             // 
@@ -206,26 +171,60 @@
             this.lblTendangnhap.TabIndex = 11;
             this.lblTendangnhap.Text = "Tên đăng nhập:";
             // 
+            // rdoAdmin
+            // 
+            this.rdoAdmin.AutoSize = true;
+            this.rdoAdmin.Location = new System.Drawing.Point(196, 340);
+            this.rdoAdmin.Name = "rdoAdmin";
+            this.rdoAdmin.Size = new System.Drawing.Size(66, 20);
+            this.rdoAdmin.TabIndex = 21;
+            this.rdoAdmin.TabStop = true;
+            this.rdoAdmin.Text = "Admin";
+            this.rdoAdmin.UseVisualStyleBackColor = true;
+            // 
+            // rdoNVBH
+            // 
+            this.rdoNVBH.AutoSize = true;
+            this.rdoNVBH.Location = new System.Drawing.Point(337, 340);
+            this.rdoNVBH.Name = "rdoNVBH";
+            this.rdoNVBH.Size = new System.Drawing.Size(66, 20);
+            this.rdoNVBH.TabIndex = 22;
+            this.rdoNVBH.TabStop = true;
+            this.rdoNVBH.Text = "NVBH";
+            this.rdoNVBH.UseVisualStyleBackColor = true;
+            // 
+            // rdoNVK
+            // 
+            this.rdoNVK.AutoSize = true;
+            this.rdoNVK.Location = new System.Drawing.Point(538, 340);
+            this.rdoNVK.Name = "rdoNVK";
+            this.rdoNVK.Size = new System.Drawing.Size(55, 20);
+            this.rdoNVK.TabIndex = 23;
+            this.rdoNVK.TabStop = true;
+            this.rdoNVK.Text = "NVK";
+            this.rdoNVK.UseVisualStyleBackColor = true;
+            // 
             // frmDangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(839, 459);
+            this.Controls.Add(this.rdoNVK);
+            this.Controls.Add(this.rdoNVBH);
+            this.Controls.Add(this.rdoAdmin);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangnhap);
-            this.Controls.Add(this.rdoNVKho);
-            this.Controls.Add(this.rdoAdmin);
-            this.Controls.Add(this.rdoNVBH);
             this.Controls.Add(this.txtDangnhap);
             this.Controls.Add(this.txtMatkhau);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.lblMatkhau);
             this.Controls.Add(this.lblTendangnhap);
             this.Name = "frmDangnhap";
             this.Text = "QLBH_Coffee";
-            //this.Load += new System.EventHandler(this.frmDangnhap_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDangnhap_FormClosed);
+            this.Load += new System.EventHandler(this.frmDangnhap_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,13 +234,13 @@
 
         private Guna.UI2.WinForms.Guna2Button btnThoat;
         private Guna.UI2.WinForms.Guna2Button btnDangnhap;
-        private System.Windows.Forms.RadioButton rdoNVKho;
-        private System.Windows.Forms.RadioButton rdoAdmin;
-        private System.Windows.Forms.RadioButton rdoNVBH;
         private Guna.UI2.WinForms.Guna2TextBox txtDangnhap;
         private Guna.UI2.WinForms.Guna2TextBox txtMatkhau;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox picLogo;
         private System.Windows.Forms.Label lblMatkhau;
         private System.Windows.Forms.Label lblTendangnhap;
+        private System.Windows.Forms.RadioButton rdoAdmin;
+        private System.Windows.Forms.RadioButton rdoNVBH;
+        private System.Windows.Forms.RadioButton rdoNVK;
     }
 }
