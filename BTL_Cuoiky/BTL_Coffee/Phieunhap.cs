@@ -114,6 +114,9 @@ namespace BTL_Cuoiky.BTL_Coffee
             home.ShowDialog();
         }
 
-        
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
