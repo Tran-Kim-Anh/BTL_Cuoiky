@@ -17,11 +17,8 @@ namespace BTL_Cuoiky
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new Hoadonbanhang());
-=======
-            Application.Run(new Quanlykho());
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
+
         }
     }
 }

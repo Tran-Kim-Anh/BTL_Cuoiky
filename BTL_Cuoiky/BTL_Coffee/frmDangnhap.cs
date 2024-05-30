@@ -57,10 +57,7 @@ namespace BTL_Cuoiky
                 MessageBox.Show("Đăng nhập thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -68,14 +65,11 @@ namespace BTL_Cuoiky
         private void frmDangnhap_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-<<<<<<< HEAD
         }
 
         private void frmDangnhap_Load(object sender, EventArgs e)
         {
 
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         }
     }
 }

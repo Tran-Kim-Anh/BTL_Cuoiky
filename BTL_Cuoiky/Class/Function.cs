@@ -16,11 +16,7 @@ namespace BTL_Cuoiky.Class
         public static string connString;
         public static void Connect()
         {
-<<<<<<< HEAD
             connString = "Data Source=DESKTOP-17E6FPA\\SQLEXPRESS;Initial Catalog=BTL;Integrated Security=True;Encrypt=False";
-=======
-            connString = "Data Source=LAPTOP-1FS3T6OE;Initial Catalog=BTLDL(1);Integrated Security=True;Encrypt=False";
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             conn = new SqlConnection();
             conn.ConnectionString = connString;
             conn.Open();
@@ -54,18 +50,10 @@ namespace BTL_Cuoiky.Class
             while (reader.Read())
             {
                 ma = reader.GetValue(0).ToString();
-<<<<<<< HEAD
-=======
-
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             }
             reader.Close();
             return ma;
         }
-<<<<<<< HEAD
-        //Hàm chạy câu lệnh SQL
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         public static void runsql(string sql)
         {
             SqlCommand cmd;
@@ -73,7 +61,7 @@ namespace BTL_Cuoiky.Class
             cmd.Connection = conn;
             cmd.CommandText = sql;
             try
-            {
+            { 
                 cmd.ExecuteNonQuery();
             }
             catch (System.Exception loi)
@@ -83,10 +71,6 @@ namespace BTL_Cuoiky.Class
             cmd.Dispose();
             cmd = null;
         }
-<<<<<<< HEAD
-        //Fill Combo
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
             try
@@ -103,11 +87,7 @@ namespace BTL_Cuoiky.Class
                 MessageBox.Show("Error in FillCombo: " + ex.Message);
             }
         }
-<<<<<<< HEAD
 
-        //Hàm ngày tháng
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         public static bool Isdate(string d)
         {
             string[] parts = d.Split('/');
@@ -122,11 +102,7 @@ namespace BTL_Cuoiky.Class
             string dt = string.Format("{0}/{1}/{2}", parts[1], parts[0], parts[2]);
             return dt;
         }
-<<<<<<< HEAD
 
-        //Kiểm tra trùng mã 
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         public static bool checkkey(string sql)
         {
             SqlDataAdapter mydata = new SqlDataAdapter(sql, conn);
@@ -141,12 +117,7 @@ namespace BTL_Cuoiky.Class
                 return false;
             }
         }
-<<<<<<< HEAD
 
-        //Hàm thực thi xóa dữ liệu 
-=======
-       
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
         public static void Runsqldel(string sql)
         {
             SqlCommand cmd = new SqlCommand();
@@ -159,17 +130,12 @@ namespace BTL_Cuoiky.Class
             catch (System.Exception)
             {
                 MessageBox.Show("Dữ liệu đang được dùng, không thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-<<<<<<< HEAD
-=======
 
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             }
             cmd.Dispose();
             cmd = null;
         }
-<<<<<<< HEAD
 
-        //Hàm tạo khóa có dạng: TientoNgaythangnam_giophutgiay
         public static string CreateKey(string tiento)
         {
             string key = tiento;
@@ -237,8 +203,7 @@ namespace BTL_Cuoiky.Class
             }
             return h;
         }
-=======
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
+
         public static string ChuyenSoSangChu(string sNumber)
         {
             int mLen, mDigit;
@@ -315,78 +280,5 @@ namespace BTL_Cuoiky.Class
             mTemp = mTemp.Substring(0, 1).ToUpper() + mTemp.Substring(1) + " đồng";
             return mTemp;
         }
-<<<<<<< HEAD
-=======
-        public static string CreateKey(string tiento)
-        {
-            string key = tiento;
-            string[] partsDay;
-            partsDay = DateTime.Now.ToShortDateString().Split('/');
-            //Ví dụ 07/08/2009
-            string d = String.Format("{0}{1}{2}", partsDay[0], partsDay[1], partsDay[2]);
-            key = key + d;
-            string[] partsTime;
-            partsTime = DateTime.Now.ToLongTimeString().Split(':');
-            //Ví dụ 7:08:03 PM hoặc 7:08:03 AM
-            if (partsTime[2].Length >= 5 && partsTime[2].Substring(3, 2) == "PM")
-                partsTime[0] = ConvertTimeTo24(partsTime[0]);
-            if (partsTime[2].Length >= 5 && partsTime[2].Substring(3, 2) == "AM")
-                if (partsTime[0].Length == 1)
-                    partsTime[0] = "0" + partsTime[0];
-            //Xóa ký tự trắng và PM hoặc AM
-            if (partsTime[2].Length > 2)
-                partsTime[2] = partsTime[2].Remove(2, 3);
-            string t;
-            t = String.Format("{0}{1}{2}", partsTime[0], partsTime[1], partsTime[2]);
-            key = key + t;
-            return key;
-        }
-
-        public static string ConvertTimeTo24(string hour)
-        {
-            string h = "";
-            switch (hour)
-            {
-                case "1":
-                    h = "13";
-                    break;
-                case "2":
-                    h = "14";
-                    break;
-                case "3":
-                    h = "15";
-                    break;
-                case "4":
-                    h = "16";
-                    break;
-                case "5":
-                    h = "17";
-                    break;
-                case "6":
-                    h = "18";
-                    break;
-                case "7":
-                    h = "19";
-                    break;
-                case "8":
-                    h = "20";
-                    break;
-                case "9":
-                    h = "21";
-                    break;
-                case "10":
-                    h = "22";
-                    break;
-                case "11":
-                    h = "23";
-                    break;
-                case "12":
-                    h = "0";
-                    break;
-            }
-            return h;
-        }
-
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
     }
 }

@@ -49,12 +49,9 @@
             this.mnuBaocao = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaobanhang = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBaocaodoanhthu = new System.Windows.Forms.ToolStripMenuItem();
-<<<<<<< HEAD
-            this.mnuBctonkho = new System.Windows.Forms.ToolStripMenuItem();
+            //this.mnuBctonkho = new System.Windows.Forms.ToolStripMenuItem();
             this.picLogo = new System.Windows.Forms.PictureBox();
-=======
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
+            //this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -275,18 +272,13 @@
             this.mnuBaocaodoanhthu.Text = "Báo cáo doanh thu";
             this.mnuBaocaodoanhthu.Click += new System.EventHandler(this.mnuBaocaodoanhthu_Click);
             // 
-<<<<<<< HEAD
             // mnuBctonkho
             // 
-            this.mnuBctonkho.Name = "mnuBctonkho";
-            this.mnuBctonkho.Size = new System.Drawing.Size(274, 30);
-            this.mnuBctonkho.Text = "Báo cáo tồn kho ";
-            this.mnuBctonkho.Click += new System.EventHandler(this.mnuBctonkho_Click);
+            //this.mnuBctonkho.Name = "mnuBctonkho";
+            //this.mnuBctonkho.Size = new System.Drawing.Size(274, 30);
+            //this.mnuBctonkho.Text = "Báo cáo tồn kho ";
+            //this.mnuBctonkho.Click += new System.EventHandler(this.mnuBctonkho_Click);
             // 
-            // picLogo
-=======
-            // pictureBox1
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             // 
             this.picLogo.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
             this.picLogo.Location = new System.Drawing.Point(537, 127);

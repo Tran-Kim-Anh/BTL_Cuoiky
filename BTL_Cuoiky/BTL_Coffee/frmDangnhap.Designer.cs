@@ -38,11 +38,8 @@
             this.rdoAdmin = new System.Windows.Forms.RadioButton();
             this.rdoNVBH = new System.Windows.Forms.RadioButton();
             this.rdoNVK = new System.Windows.Forms.RadioButton();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
+            //((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThoat
@@ -146,7 +143,7 @@
             // 
             // picLogo
             // 
-<<<<<<< HEAD
+
             this.picLogo.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
             this.picLogo.ImageRotate = 0F;
             this.picLogo.Location = new System.Drawing.Point(337, -1);
@@ -155,16 +152,14 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 13;
             this.picLogo.TabStop = false;
-=======
-            this.guna2PictureBox1.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(333, -4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(174, 157);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 13;
-            this.guna2PictureBox1.TabStop = false;
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
+            //this.guna2PictureBox1.Image = global::BTL_Cuoiky.Properties.Resources.Brown_White_Modern_Elegant_Round_Coffee_Shop_Logo__1_;
+            //this.guna2PictureBox1.ImageRotate = 0F;
+            //this.guna2PictureBox1.Location = new System.Drawing.Point(333, -4);
+            //this.guna2PictureBox1.Name = "guna2PictureBox1";
+            //this.guna2PictureBox1.Size = new System.Drawing.Size(174, 157);
+            //this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            //this.guna2PictureBox1.TabIndex = 13;
+            //this.guna2PictureBox1.TabStop = false;
             // 
             // lblMatkhau
             // 
@@ -191,17 +186,14 @@
             // rdoAdmin
             // 
             this.rdoAdmin.AutoSize = true;
-<<<<<<< HEAD
             this.rdoAdmin.Location = new System.Drawing.Point(196, 340);
             this.rdoAdmin.Name = "rdoAdmin";
             this.rdoAdmin.Size = new System.Drawing.Size(66, 20);
-=======
             this.rdoAdmin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rdoAdmin.Location = new System.Drawing.Point(196, 349);
             this.rdoAdmin.Name = "rdoAdmin";
             this.rdoAdmin.Size = new System.Drawing.Size(85, 27);
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             this.rdoAdmin.TabIndex = 21;
             this.rdoAdmin.TabStop = true;
             this.rdoAdmin.Text = "Admin";
@@ -210,17 +202,14 @@
             // rdoNVBH
             // 
             this.rdoNVBH.AutoSize = true;
-<<<<<<< HEAD
             this.rdoNVBH.Location = new System.Drawing.Point(337, 340);
             this.rdoNVBH.Name = "rdoNVBH";
             this.rdoNVBH.Size = new System.Drawing.Size(66, 20);
-=======
             this.rdoNVBH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoNVBH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rdoNVBH.Location = new System.Drawing.Point(374, 349);
             this.rdoNVBH.Name = "rdoNVBH";
             this.rdoNVBH.Size = new System.Drawing.Size(87, 27);
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             this.rdoNVBH.TabIndex = 22;
             this.rdoNVBH.TabStop = true;
             this.rdoNVBH.Text = "NVBH";
@@ -229,17 +218,14 @@
             // rdoNVK
             // 
             this.rdoNVK.AutoSize = true;
-<<<<<<< HEAD
             this.rdoNVK.Location = new System.Drawing.Point(538, 340);
             this.rdoNVK.Name = "rdoNVK";
             this.rdoNVK.Size = new System.Drawing.Size(55, 20);
-=======
             this.rdoNVK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoNVK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rdoNVK.Location = new System.Drawing.Point(568, 349);
             this.rdoNVK.Name = "rdoNVK";
             this.rdoNVK.Size = new System.Drawing.Size(73, 27);
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             this.rdoNVK.TabIndex = 23;
             this.rdoNVK.TabStop = true;
             this.rdoNVK.Text = "NVK";
@@ -264,12 +250,9 @@
             this.Name = "frmDangnhap";
             this.Text = "QLBH_Coffee";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDangnhap_FormClosed);
-<<<<<<< HEAD
             this.Load += new System.EventHandler(this.frmDangnhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
+            //((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

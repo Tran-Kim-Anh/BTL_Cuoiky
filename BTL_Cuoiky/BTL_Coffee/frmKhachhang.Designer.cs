@@ -103,11 +103,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgriddanhsachkh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-<<<<<<< HEAD
             this.dgriddanhsachkh.ColumnHeadersHeight = 40;
-=======
             this.dgriddanhsachkh.ColumnHeadersHeight = 4;
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             this.dgriddanhsachkh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -445,11 +442,8 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgridLichsugiaodich.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-<<<<<<< HEAD
             this.dgridLichsugiaodich.ColumnHeadersHeight = 40;
-=======
             this.dgridLichsugiaodich.ColumnHeadersHeight = 4;
->>>>>>> 9636d73d831f62c8677ea0e58617cbed681b2003
             this.dgridLichsugiaodich.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
