@@ -17,7 +17,7 @@ namespace BTL_Cuoiky
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Hoadonbanhang());
+            Application.Run(new Sanpham());
 
         }
     }

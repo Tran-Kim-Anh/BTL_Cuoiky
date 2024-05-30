@@ -16,7 +16,7 @@ namespace BTL_Cuoiky.Class
         public static string connString;
         public static void Connect()
         {
-            connString = "Data Source=DESKTOP-17E6FPA\\SQLEXPRESS;Initial Catalog=BTL;Integrated Security=True;Encrypt=False";
+            connString = "Data Source=NHUNG\\SQLEXPRESS;Initial Catalog=BTL(DL);Integrated Security=True;Encrypt=False";
             conn = new SqlConnection();
             conn.ConnectionString = connString;
             conn.Open();
@@ -147,18 +147,27 @@ namespace BTL_Cuoiky.Class
             string[] partsTime;
             partsTime = DateTime.Now.ToLongTimeString().Split(':');
             //Ví dụ 7:08:03 PM hoặc 7:08:03 AM
-            if (partsTime[2].Substring(3, 2) == "PM")
+            if (partsTime[2].Length >= 4 && partsTime[2].Substring(3, 2) == "PM")
                 partsTime[0] = ConvertTimeTo24(partsTime[0]);
-            if (partsTime[2].Substring(3, 2) == "AM")
+            if (partsTime[2].Length >= 4 && partsTime[2].Substring(3, 2) == "AM")
                 if (partsTime[0].Length == 1)
                     partsTime[0] = "0" + partsTime[0];
             //Xóa ký tự trắng và PM hoặc AM
-            partsTime[2] = partsTime[2].Remove(2, 3);
+            if (partsTime[2].Length >= 5)
+            {
+                partsTime[2] = partsTime[2].Remove(2, 3);
+            }
+            else
+            {
+                // Xử lý trường hợp chuỗi không đủ dài
+                partsTime[2] = partsTime[2].Substring(0, 2); // Lấy 2 ký tự đầu tiên
+            }
             string t;
             t = String.Format("{0}{1}{2}", partsTime[0], partsTime[1], partsTime[2]);
             key = key + t;
             return key;
         }
+
         public static string ConvertTimeTo24(string hour)
         {
             string h = "";

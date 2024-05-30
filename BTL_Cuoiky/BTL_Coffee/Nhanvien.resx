@@ -2169,31 +2169,9 @@
   <metadata name="mnuNVBH.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="btnphanquyen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABIlJREFUaEPtmUmIHVUYhdvEaDCCJA4x7qLggLqSKEggG8WFuHEAEcQ4gDgsQkRB
-        BDW4c1hIHEBUHHZu1IWKEhXUhUFwigqKijMoDgvFAYfrd/576lKd17dfV716SZT3weH1PXX+/76/+w1V
-        1XMzZszNpZQ2oNvRp+gT/7zBh/dteKInolvRR6jG5+hutBHt59K9D0+m9uTbT7jJfIja7N2h2HQpT37B
-        J4bfu3YQaF57Al+gXk+A/J4dimYvojafoTvRqWjijdTDvdRTvdvscGxy3FDchU5DU/vTq7f30F6BD02O
-        +w3XcIl429kgI7jf/3cQ21UcK9iu4ljB9myQEej1KnrFy0LssgiOFWxXcaxge7hBanifKo4VbFdxrGC7
-        /yDU7o8uRE+gd9DP6Cf0PDrDsanDXoGX3aDuBPRudFiYf9CN6BCXTI3YDbxcOtSsRd9GdUpvocvQ8egg
-        dBi6Fv2KxF/oGbTW5YMTu4CXS4eax3NpegodaHse+Gehp9H3SLyGdFpxKPpTRoNLCrarOFaw3W0Q8muQ
-        fsu/oSNtVyFzFPoBidPt7cjLTARb2K7iWMF250HOzWXpBVtjIXtfLknXe63L2UKEWtiu4ljBdudBrsll
-        abutsZDdkktyDY/X5WUmQi1sV3GsYLvzIFtzWbrD1ljIzhtkaNy78yCX5LL0sK2xkG1eSjfZGhT37jyI
-        LivFyKlIDbLNlePZtgbFvTsPcjDSl52+xZfZrkJmOfrFNWvsvYkKEWxhu4pjBdudBzknl6Wv0HLbVcis
-        QN+oAOLGG49P5mUmgi1sV3GsYLvzILflsrTN1ljI3p9L0hav94mP36tzWXrM1ljINn+Bq7zWXZBChFrY
-        ruJYwXbnQY5Gv6O/0eW2q5C5AYk/0Hrbg5LbdxxEUHNFLk0f21oQji9D3yG90S+2PTj0DrzsBnW6/hDn
-        2xqBYxfkSNppayp4j96DbM7l8TG80XYB7xTUnPluttf8JecRBS1sV3GsYLv3IHrZPBIdOLu1XcBrhngU
-        KauP4d3vsgcuKdiu4ljBdr9BBLW6vmgoX476OVtB3Dblsdza3J0oamG7imMF2/0HEe4hVtiSp99+4PVK
-        pJfggkRRC9tVHCvY7j8Itetyi0BnuMeg9ag51RfrHJ8a3qffINRtQh9Eh8VRZpPLpkLepsMgZFcj3Vh4
-        W4VmF7oSvRSrzHNIp/vvxSqjGtWudrvBiO7gZR0yx6GHkK7TG3QX5Wa0yhnd49J/lN5AzRt8FboFNXdc
-        hHo8iI5VZgiiK3g5Csf0Jr0H6XRE6PFZdB46wLEC3jYUJ4ZtlHWNatu9tqOVjvUmuoGX88HXG7l5Cem3
-        eC+qnitxTEN/ifSeqF6nqAdSL52vCe0Rd2N41L3j3sQGbfB0MbQzjubX+Uk+VIXMRZHOnGm7CpmT0fuR
-        Tul1pD0nGWT0ihXz0nwsLp4Ot70o5HQzruEB24tC7gj0dVTw4WB7OGj6cu6dttpaFHL6htdZbsMuHxoL
-        2ebW0HD/lW2g6Y+59x5l5HxtYmg60ZuuJ0u+KzPjv8Xc3L/Yc6M2ckZiKwAAAABJRU5ErkJggg==
-</value>
-  </data>
+  <metadata name="mnuNVBH.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="btnTimkiem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

@@ -310,14 +310,14 @@ namespace BTL_Cuoiky.BTL_Coffee
             // Cập nhật lại số lượng của sản phẩm vào bảng tblSanPham
             double soLuongCu = Convert.ToDouble(Class.Function.Getfieldvalues("SELECT SoLuong FROM tblSanPham WHERE MaSanPham= N'" + cboMasp.Text + "'"));
             double soLuongMoi = soLuongCu + sl;
-            sql = "UPDATE tblSanPham SET SoLuong =" + soLuongMoi + " WHERE MaSanPham= N'" + cboMasp.Text + "'";
+            sql = "UPDATE tblSanPham SET SoLuong ='" + soLuongMoi + "' WHERE MaSanPham= N'" + cboMasp.Text + "'";
             Class.Function.runsql(sql);
 
             // Cập nhật lại tổng tiền cho phiếu nhập
             if (double.TryParse(Class.Function.Getfieldvalues("SELECT TongTien FROM tblPhieuNhap WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text + "'"), out double tongTienCu))
             {
                 double tongTienMoi = tongTienCu + thanhTien;
-                sql = "UPDATE tblPhieuNhap SET TongTien =" + tongTienMoi + " WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text + "'";
+                sql = "UPDATE tblPhieuNhap SET TongTien ='" + tongTienMoi + "' WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text + "'";
                 Class.Function.runsql(sql);
                 txtTongtien.Text = tongTienMoi.ToString();
                 lblBangchu.Text = "Bằng chữ: " + Class.Function.ChuyenSoSangChu(tongTienMoi.ToString());
@@ -364,7 +364,7 @@ namespace BTL_Cuoiky.BTL_Coffee
             txtTenSP.Text = dgridPhieunhap.CurrentRow.Cells["TenSanPham"].Value.ToString();
             txtSoluong.Text = dgridPhieunhap.CurrentRow.Cells["SoLuong"].Value.ToString();
             txtDongia.Text = dgridPhieunhap.CurrentRow.Cells["DonGia"].Value.ToString();
-            txtChietkhau.Text = dgridPhieunhap.CurrentRow.Cells["ChietKhau"].ToString();
+            txtChietkhau.Text = dgridPhieunhap.CurrentRow.Cells["ChietKhau"].Value.ToString();
             mskHansudung.Text = dgridPhieunhap.CurrentRow.Cells["HanSuDung"].Value.ToString();
             txtDonvitinh.Text = dgridPhieunhap.CurrentRow.Cells["DonViTinh"].Value.ToString();
             txtHTTT.Text = dgridPhieunhap.CurrentRow.Cells["HinhThucThanhToan"].Value.ToString();
@@ -380,9 +380,9 @@ namespace BTL_Cuoiky.BTL_Coffee
                 MessageBox.Show("Không còn dữ liệu!", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 return;
             }
-            if (cboMasp.Text.Trim().Length == 0)
+            if (cboMasp.Text=="")
             {
-                MessageBox.Show("Bạn phải chọn sản phẩm", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải chọn một bản ghi", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cboMasp.Focus();
                 return;
             }
@@ -392,12 +392,7 @@ namespace BTL_Cuoiky.BTL_Coffee
                 txtSoluong.Focus();
                 return;
             }
-            if (txtChietkhau.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Bạn phải nhập chiết khấu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtChietkhau.Focus();
-                return;
-            }
+           
             if (txtDonvitinh.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập đơn vị tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -416,42 +411,32 @@ namespace BTL_Cuoiky.BTL_Coffee
                 txtHTTT.Focus();
                 return;
             }
-            // Kiểm tra mã sản phẩm trong chi tiết phiếu nhập
-            sql = "SELECT MaSanPham FROM tblChiTietPhieuNhap WHERE MaSanPham=N'" + cboMasp.Text.Trim() + "' AND MaPhieuNhap = N'" + txtMaphieunhap.Text.Trim() + "'";
-            if (Class.Function.checkkey(sql))
-            {
-                MessageBox.Show("Mã sản phẩm này đã có, bạn phải nhập mã khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                ResetValuesSP();
-                cboMasp.Focus();
-                return;
-            }
             if (!double.TryParse(txtChietkhau.Text, out double chietKhau))
             {
                 MessageBox.Show("Bạn phải nhập chiết khấu hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtChietkhau.Focus();
                 return;
             }
+
             double thanhTien = (sl * dongia) - chietKhau;
 
             // Chèn dữ liệu vào bảng ChiTietPhieuNhap
             string HSDFormatted = DateTime.Parse(mskHansudung.Text.Trim()).ToString("yyyy-MM-dd");
-            sql = "UPDATE tblChiTietPhieuNhap SET SoLuong = " + sl + ", DonGia = " + dongia + ", ChietKhau = " + chietKhau +", HanSuDung = '" + HSDFormatted + "', DonViTinh = N'" + txtDonvitinh.Text.Trim() + "', HinhThucThanhToan = N'" + txtHTTT.Text.Trim() + "', ThanhTien = " + thanhTien +" WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text.Trim() + "' AND MaSanPham = N'" + cboMasp.SelectedValue + "'";
+            sql = "UPDATE tblChiTietPhieuNhap SET SoLuong = '" + sl + "', DonGia = '" + dongia + "', ChietKhau = '" + chietKhau +"', HanSuDung = '" + HSDFormatted + "', DonViTinh = N'" + txtDonvitinh.Text.Trim() + "', HinhThucThanhToan = N'" + txtHTTT.Text.Trim() + "', ThanhTien = " + thanhTien +" WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text.Trim() + "' AND MaSanPham = N'" + cboMasp.SelectedValue + "'";
             Class.Function.runsql(sql);
-            //sql = "UPDATE tblChiTietPhieuNhap SET MaPhieuNhap=N'" + txtMaphieunhap.Text.Trim() + "', MaSanPham, SoLuong, DonGia, ChietKhau, DonViTinh, HinhThucThanhToan, HanSuDung, ThanhTien) VALUES(, N'" + cboMasp.SelectedValue + "', '" + sl + "', '" + dongia + "', '" + chietKhau + "', '" + txtDonvitinh.Text + "', '" + txtHTTT.Text + "', '" + HSDFormatted + "', '" + thanhTien + "')";
-            //Class.Function.runsql(sql);
             load_datagridview();
 
             // Cập nhật lại số lượng của sản phẩm vào bảng tblSanPham
             double soLuongCu = Convert.ToDouble(Class.Function.Getfieldvalues("SELECT SoLuong FROM tblSanPham WHERE MaSanPham= N'" + cboMasp.Text + "'"));
             double soLuongMoi = soLuongCu + sl;
-            sql = "UPDATE tblSanPham SET SoLuong =" + soLuongMoi + " WHERE MaSanPham= N'" + cboMasp.Text + "'";
+            sql = "UPDATE tblSanPham SET SoLuong ='" + soLuongMoi + "' WHERE MaSanPham= N'" + cboMasp.Text + "'";
             Class.Function.runsql(sql);
 
             // Cập nhật lại tổng tiền cho phiếu nhập
             if (double.TryParse(Class.Function.Getfieldvalues("SELECT TongTien FROM tblPhieuNhap WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text + "'"), out double tongTienCu))
             {
                 double tongTienMoi = tongTienCu + thanhTien;
-                sql = "UPDATE tblPhieuNhap SET TongTien =" + tongTienMoi + " WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text + "'";
+                sql = "UPDATE tblPhieuNhap SET TongTien ='" + tongTienMoi + "' WHERE MaPhieuNhap = N'" + txtMaphieunhap.Text + "'";
                 Class.Function.runsql(sql);
                 txtTongtien.Text = tongTienMoi.ToString();
                 lblBangchu.Text = "Bằng chữ: " + Class.Function.ChuyenSoSangChu(tongTienMoi.ToString());
@@ -498,7 +483,7 @@ namespace BTL_Cuoiky.BTL_Coffee
             sql = "SELECT SoLuong FROM tblSanPham WHERE MaSanPham = N'" + MaSanPham + "'";
             sl = Convert.ToDouble(Class.Function.Getfieldvalues(sql));
             SLcon = sl + s;
-            sql = "UPDATE tblSanPham SET SoLuong =" + SLcon + " WHERE MaSanPham= N'" + MaSanPham + "'";
+            sql = "UPDATE tblSanPham SET SoLuong ='" + SLcon + "' WHERE MaSanPham= N'" + MaSanPham + "'";
             Class.Function.runsql(sql);
         }
         private void DelUpdateTongtien(string Maphieunhap, double Thanhtien)
@@ -508,7 +493,7 @@ namespace BTL_Cuoiky.BTL_Coffee
             sql = "SELECT TongTien FROM tblPhieuNhap WHERE MaPhieuNhap = N'" + Maphieunhap + "'";
             Tong = Convert.ToDouble(Class.Function.Getfieldvalues(sql));
             Tongmoi = Tong - Thanhtien;
-            sql = "UPDATE tblPhieuNhap SET TongTien =" + Tongmoi + " WHERE MaPhieuNhap = N'" +Maphieunhap + "'";
+            sql = "UPDATE tblPhieuNhap SET TongTien ='" + Tongmoi + "' WHERE MaPhieuNhap = N'" +Maphieunhap + "'";
             Class.Function.runsql(sql);
             txtTongtien.Text = Tongmoi.ToString();
             lblBangchu.Text = "Bằng chữ: " + Class.Function.ChuyenSoSangChu(Tongmoi.ToString());
