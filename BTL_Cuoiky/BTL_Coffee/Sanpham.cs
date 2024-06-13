@@ -169,6 +169,7 @@ namespace BTL_Cuoiky.BTL_Coffee
             txtgianhap.Text = "0";
             txtGiaban.Enabled = false;
             txtgianhap.Enabled = false;
+            txtsoluong.Enabled=false;
             txtsoluong.Text = "";
             txtanh.Text = "";
             pbanh.Image = null;
@@ -228,18 +229,6 @@ namespace BTL_Cuoiky.BTL_Coffee
             {
                 MessageBox.Show("Bạn phải nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txttensanpham.Focus();
-                return;
-            }
-            if (txtgianhap.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập giá nhập sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtgianhap.Focus();
-                return;
-            }
-            if (txtsoluong.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtsoluong.Focus();
                 return;
             }
             if (txtanh.Text == "")
@@ -305,24 +294,6 @@ namespace BTL_Cuoiky.BTL_Coffee
             {
                 MessageBox.Show("Bạn phải nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txttensanpham.Focus();
-                return;
-            }
-            if (txtgianhap.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập giá nhập của sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtgianhap.Focus();
-                return;
-            }
-            if (txtGiaban.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập giá bán của sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtGiaban.Focus();
-                return;
-            }
-            if (txtsoluong.Text == "")
-            {
-                MessageBox.Show("Bạn phải nhập số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtsoluong.Focus();
                 return;
             }
             if (cbomaloai.Text == "")
